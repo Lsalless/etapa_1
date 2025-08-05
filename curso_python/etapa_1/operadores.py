@@ -20,21 +20,7 @@ else:
 
 #3 - Solicite a idade de uma pessoa e verifique se ela tem entre 18 e 30 anos e se tem carteira de motorista (pergunte com input se sim ou não).
 
-nome = (input('Qual é o seu nome?: ')).strip().lower()
 idade = int(input('E qual é a sua idade?: '))
+verificacao = 18 >= idade <=30
+print(f'Verificando a sua idade: {verificacao}')
 cnh = input(f'Você tem carteira de motorista? (sim/não): ').strip().lower()
-
-if 18 <= idade <= 30 and cnh == "sim":
-    print(f'{nome}, bebida liberada e direção também !')
-elif idade < 18 or cnh == 'nao':
-    print(f'{nome}, você não pode dirigir')
-while idade == 30:
-    print(f'{nome}, beba com muita moderação!')
-    break
-
-
-# cnh = input(f'Você tem carteira de motorista? (sim/não): ').strip().lower()
-# if cnh == 'sim' or idade == 18:
-#     print('Pode dirigir então')
-# else: 
-#     print('Não dirija')

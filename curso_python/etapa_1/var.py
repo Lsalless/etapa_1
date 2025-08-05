@@ -11,7 +11,7 @@ print(f'Antes da troca: a = {a}, b = {b}')
 
 a, b = b, a 
 
-print(f'depois a troca: a = {a}, b = {b}')
+print(f'depois da troca: a = {a}, b = {b}')
 
 #3 - Crie uma variável com o valor 100, depois aumente esse valor em 25 e imprima o novo resultado.
 
