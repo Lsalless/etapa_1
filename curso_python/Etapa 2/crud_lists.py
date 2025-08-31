@@ -9,6 +9,7 @@
 # Atualizar um nome existente
 # Remover um nome
 
+
 nomes = []
 
 def adicionar_nome(nome):
@@ -18,10 +19,11 @@ def adicionar_nome(nome):
 def listar_nomes():
     if nomes:
         print('Lista de nomes:')
-        for nome in nomes:
-            print(f'- {nome}')
+        for i, nome in enumerate(nomes, 1):
+            print(f'{i}. {nome}')
     else:
         print('A lista está vazia.')
+
 
 def atualizar_nome(nome_antigo, novo_nome):
     if nome_antigo in nomes:
@@ -30,6 +32,7 @@ def atualizar_nome(nome_antigo, novo_nome):
         print('Nome atualizado com sucesso!')
     else:
         print('Nome não encontrado.')
+
 
 def remover_nome(nome):
     if nome in nomes:
@@ -69,3 +72,7 @@ while True:
         break
     else:
         print('Opção inválida. Tente novamente.')
+
+
+
+

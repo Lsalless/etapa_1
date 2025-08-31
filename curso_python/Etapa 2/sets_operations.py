@@ -5,9 +5,9 @@
 # Verifique se "Python" está no conjunto
 
 
-linguagens = {'python', 'java', 'ruby'}
+linguagens ={'python', 'java', 'ruby'}
 print(linguagens)
-linguagens.add ('php')
+linguagens.add('php')
 linguagens.remove('ruby')
 
 if 'python' in linguagens:
